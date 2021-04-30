@@ -1,0 +1,48 @@
+{
+  "name": "gatsby-adding-math-to-md-mdx-pages",
+  "version": "1.0.0",
+  "description": "Adding markdown pages to Gatsby",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "prestart": "gatsby clean",
+    "start": "gatsby develop --host=0.0.0.0 --port=4000 --open",
+    "prebuild": "gatsby clean",
+    "build": "gatsby build",
+    "serve": "gatsby serve --host=0.0.0.0 --port=5000 --open",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^3.4.0",
+    "gatsby-plugin-mdx": "^2.4.0",
+    "gatsby-plugin-sass": "^4.4.0",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-transformer-remark": "^4.1.0",
+    "katex": "^0.13.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "3.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "sass": "^1.32.12"
+  },
+  "workspaces": [
+    "plugins/*"
+  ],
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "jsxBracketSameLine": false,
+    "endOfLine": "lf"
+  }
+}
